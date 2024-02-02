@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Celsius</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Conversor de grados Celsius</h1>
+    
+    <p>
+        <label>Celsius: </label>
+        <input id="inputCelsius" type="number" placeholder="Escribe la temperatura en grados Celsius"
+        oninput="conversorCelsius(this.value)"
+        onchange="conversorCelsius(this.value)">
+    </p>
+
+    <p>Farenheit: <span id="outputFarenheit"></span></p>
+    <p>Kevin: <span id="outputKelvin"></span></p>
+
+    <!-- JavaScript -->
+    <script src="js/temperatura.js"></script>
+    
+</body>
+</html>
